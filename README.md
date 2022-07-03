@@ -32,7 +32,7 @@
 
 ## Screenshots
 
-![only calculator](./screenshots/secondCalc.PNG)
+![To Do App](./screenshots/secondCalc.PNG)
 
 ## 🤝 Contributing
 
