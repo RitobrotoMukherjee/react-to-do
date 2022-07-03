@@ -1,15 +1,13 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# To Do App using React JS
 
-# Project Name
-
-> Description the project.
+> A web app developed using `React`. It's a simple To-Do application.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5
+- CSS3
+- React JS
 
 ## Live Demo (if available)
 
@@ -18,39 +16,23 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- **`git clone https://github.com/RitobrotoMukherjee/react-to-do.git`**
+- **`cd react-to-do`**
+- **`npm run install`**
+- **`npm run start`**
 
 ## Authors
 
-👤 **Author1**
+👤 **Ritobroto Mukherjee**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Portfolio: [@Rito](https://ritobrotomukherjee.github.io/Work-Portfolio/)
+- GitHub: [@RitobrotoMukherjee](https://github.com/RitobrotoMukherjee)
+- Twitter: [@RitobrotoM3](https://twitter.com/RitobrotoM3)
+- LinkedIn: [Ritobroto Mukherjee](https://www.linkedin.com/in/ritobroto-mukherjee-519148ba/)
 
-👤 **Author2**
+## Screenshots
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+![only calculator](./screenshots/secondCalc.PNG)
 
 ## 🤝 Contributing
 
@@ -64,10 +46,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- React
 
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## Code Reviewers
