@@ -16,19 +16,18 @@ const TodoList = () => {
     }, [todoList]);
 
     const addTodoItem = (title) => {
-        console.log(title);
         const newTodo = { id: todoList.length, title, completed: false};
         setTodos([...todoList, newTodo]);
     }
 
     const markCompleted = (id) => {
         todoList[id].completed = !todoList[id].completed;
-        setTodos(todoList);
+        setTodos([...todoList]);
     }
 
     const updateTodo = (id, title) => {
         todoList[id].title = title;
-        setTodos(todoList);
+        setTodos([...todoList]);
     }
 
     return (

@@ -1,23 +1,35 @@
 import PropTypes from 'prop-types';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const TodoListItem = (props) => {
     const { id, title, completed } = props.todoItem;
     const { handleCompleted, updateToDoItem } = props;
+
+    const [checked, setCompleted] = useState(completed);
+
+    const [ desc, setDesc ] = useState(title);
+
     const ListStyle = {
         listStleType: "none", display: "flex", flexWrap: "wrap"
     }
 
-    const handleUpdate = (e) => {
+    const handleEdit = (e) => {
         const { value } = e.target;
         updateToDoItem(id, value);
+        setDesc(value);
+    }
+
+    const handleCompletedChange = (e) => {
+        const { checked } = e.target;
+        setCompleted(checked);
+        handleCompleted(id);
     }
 
     return (
         <li style={ListStyle}>
-            <input className="List-item List-item-checkbox" type="checkbox" checked={completed} onChange={() => handleCompleted(id)} />
-            <input className="List-item Input-item" type="text" value={title} onChange={handleUpdate} />
+            <input className="List-item List-item-checkbox" type="checkbox" checked={checked} onChange={handleCompletedChange} />
+            <input className="List-item Input-item" type="text" value={desc} onChange={handleEdit} />
         </li>
     );
 }
