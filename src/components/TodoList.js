@@ -16,7 +16,7 @@ const TodoList = () => {
   }, [todoList]);
 
   const addTodoItem = (title) => {
-    const newTodo = { id: todoList.length, title, completed: false };
+    const newTodo = { id: todoList.length + 1, title, completed: false };
     setTodos([...todoList, newTodo]);
   };
 
@@ -26,7 +26,7 @@ const TodoList = () => {
   };
 
   const updateTodo = (id, title) => {
-    todoList[id].title = title;
+    todoList[id - 1].title = title;
     setTodos([...todoList]);
   };
 

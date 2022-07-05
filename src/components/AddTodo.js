@@ -5,7 +5,7 @@ class InputTodo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: 'Add To Do',
+      title: '',
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -19,6 +19,9 @@ class InputTodo extends React.Component {
       const { addTodo } = this.props;
       addTodo(title);
     }
+    this.setState({
+      title: '',
+    });
   }
 
   handleInputChange(e) {
@@ -32,7 +35,7 @@ class InputTodo extends React.Component {
     const { title } = this.state;
     return (
       <form className="Add-to-do-form" onSubmit={this.handleSubmit}>
-        <input className="Form-control" name="title" value={title} onChange={this.handleInputChange} />
+        <input className="Form-control" name="title" value={title} onChange={this.handleInputChange} placeholder="Add A To Do" />
         <button className="Btn Submit-btn" type="submit">Submit</button>
       </form>
     );
