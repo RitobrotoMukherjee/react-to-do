@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import AddInput from './AddTodo';
 import TodoListItem from './TodoListItem';
+import RandomId from '../helpers/Random';
 
 const getLocalStorage = () => {
   const todos = localStorage.getItem('todos');
@@ -35,7 +36,7 @@ const TodoList = () => {
       const td = { ...todo, id: i + 1 };
       return td;
     });
-    setTodos([...newTodo]);
+    setTodos(newTodo);
   };
 
   return (
@@ -45,7 +46,7 @@ const TodoList = () => {
       <ul className="Todo-list">
         {todoList.map((todo) => (
           <TodoListItem
-            key={todo.id}
+            key={RandomId()}
             todoItem={todo}
             handleCompleted={markCompleted}
             updateToDoItem={updateTodo}

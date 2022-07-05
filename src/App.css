@@ -63,6 +63,7 @@
   background-color: rgb(15, 228, 15);
   border: 1px solid #ccc;
   border-radius: 60px;
+  cursor: pointer;
 }
 
 .List-item-checkbox:checked {
@@ -84,6 +85,21 @@
   opacity: 0.75;
   text-decoration: line-through;
   pointer-events: none;
+}
+
+.Delete-button {
+  border: 1px solid rgb(33, 33, 241);
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  color: rgb(33, 33, 241, 0.9);
+  transition: all 1s;
+}
+
+.Delete-button:hover {
+  background-color: rgb(33, 33, 241);
+  color: #fff;
+  border-radius: 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
