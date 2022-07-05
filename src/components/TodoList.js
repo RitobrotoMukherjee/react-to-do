@@ -39,7 +39,7 @@ const TodoList = () => {
   };
 
   return (
-    <>
+    <div className="Todo-main">
       <Header heading="To Do App" />
       <AddInput addTodo={addTodoItem} />
       <ul className="Todo-list">
@@ -53,7 +53,7 @@ const TodoList = () => {
           />
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

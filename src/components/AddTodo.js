@@ -35,8 +35,7 @@ class InputTodo extends React.Component {
     const { title } = this.state;
     return (
       <form className="Add-to-do-form" onSubmit={this.handleSubmit}>
-        <input className="Form-control" name="title" value={title} onChange={this.handleInputChange} placeholder="Add A To Do" />
-        <button className="Btn Submit-btn" type="submit">Submit</button>
+        <input className="Form-control Add-to-do-input" name="title" value={title} onChange={this.handleInputChange} placeholder="Add A To Do" />
       </form>
     );
   }

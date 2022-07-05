@@ -7,10 +7,81 @@
   pointer-events: none;
 }
 
+.Todo-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto;
+  min-height: 350px;
+  width: 65%;
+  padding: 30px;
+  border: 1px solid rgb(1, 1, 36, 0.85);
+  border-radius: 6px;
+  box-shadow: 0 3px 15px 15px #cfc6c6;
+}
+
+.Add-to-do-form {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding: 18px;
+  margin: 9px auto;
+}
+
+.Form-control {
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 9px;
+  margin: 3px auto;
+}
+
+.Add-to-do-input {
+  padding: 12px;
+  border-radius: 21px;
+}
+
+.Todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.List-item {
+  width: 75%;
+  padding: 3px;
+  margin: 1px auto;
+}
+
+.List-item-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 21px;
+  background-color: rgb(15, 228, 15);
+  border: 1px solid #ccc;
+  border-radius: 60px;
+}
+
+.List-item-checkbox:checked {
+  background-color: rgb(244, 115, 98);
+}
+
+.Flex-1 {
+  flex: 1 1 6px;
+  margin: 6px;
+}
+
+.Flex-2 {
+  flex: 1 1 70%;
+}
+
 .Pen-through {
   font-style: italic;
   color: #595959;
-  opacity: 0.4;
+  opacity: 0.75;
   text-decoration: line-through;
   pointer-events: none;
 }

@@ -9,7 +9,7 @@ const Header = (props) => {
   };
 
   const h1Style = {
-    fontSize: '6rem', fontWeight: '600', marginBottom: '2rem', lineHeight: '1em', color: 'blue', textAlign: 'center',
+    fontSize: '35px', fontWeight: '400', marginBottom: '15px', lineHeight: '1em', color: 'blue', textAlign: 'center',
   };
 
   return (

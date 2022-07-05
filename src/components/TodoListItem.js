@@ -13,8 +13,10 @@ const TodoListItem = (props) => {
   const [desc, setDesc] = useState(title);
 
   const ListStyle = {
-    listStleType: 'none', display: 'flex', flexWrap: 'wrap',
+    listStleType: 'none', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItem: 'center',
   };
+
+  const fixedClassNames = 'Flex-2 Form-control';
 
   const handleEdit = (e) => {
     const { value } = e.target;
@@ -33,10 +35,10 @@ const TodoListItem = (props) => {
   };
 
   return (
-    <li style={ListStyle}>
-      <input className="List-item List-item-checkbox" type="checkbox" checked={checked} onChange={handleCompletedChange} />
-      <input className={checked ? 'List-item Input-item Pen-through' : 'List-item Input-item'} type="text" value={desc} onChange={handleEdit} />
-      <button type="button" onClick={handleDeleted}>
+    <li className="List-item" style={ListStyle}>
+      <input className="List-item-checkbox Flex-1" type="checkbox" checked={checked} onChange={handleCompletedChange} />
+      <input className={checked ? `${fixedClassNames} Pen-through` : `${fixedClassNames}`} type="text" value={desc} onChange={handleEdit} />
+      <button className="Delete-button Flex-1" type="button" onClick={handleDeleted}>
         <i className="fas fa-trash-alt delete-task" />
       </button>
 
