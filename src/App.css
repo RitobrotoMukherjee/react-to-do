@@ -8,10 +8,10 @@
 }
 
 .Pen-through {
-  font-style: "italic";
-  color: "#595959";
+  font-style: italic;
+  color: #595959;
   opacity: 0.4;
-  text-decoration: "line-through";
+  text-decoration: line-through;
   pointer-events: none;
 }
 

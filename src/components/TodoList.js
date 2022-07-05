@@ -31,8 +31,7 @@ const TodoList = () => {
   };
 
   const deleteTodo = (dId) => {
-    const filteredTodo = todoList.filter(({ id }) => id !== dId);
-    const newTodo = filteredTodo.map((todo, i) => {
+    const newTodo = todoList.filter(({ id }) => id !== dId).map((todo, i) => {
       const td = { ...todo, id: i + 1 };
       return td;
     });
