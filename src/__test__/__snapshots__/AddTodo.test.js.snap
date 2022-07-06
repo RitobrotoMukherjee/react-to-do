@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input and Header test Input todo component testing 1`] = `
+<form
+  className="Add-to-do-form"
+  onSubmit={[Function]}
+>
+  <input
+    className="Form-control Add-to-do-input"
+    name="title"
+    onChange={[Function]}
+    placeholder="Add A To Do"
+    value=""
+  />
+</form>
+`;

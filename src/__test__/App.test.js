@@ -1,8 +1,16 @@
+import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
 describe('Test components', () => {
-  test('Test App component', () => {
+  test('Test App Component Snapshot', () => {
+    // Arrange, Act
+    const TREE = renderer.create(<App />).toJSON();
+    // Assert
+    expect(TREE).toMatchSnapshot();
+  });
+
+  test('Test App component Rendering', () => {
     // Arrage
     render(<App />);
 
