@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
+import Header from './Helper';
 import AddInput from './AddTodo';
 import TodoListItem from './TodoListItem';
 import RandomId from '../helpers/Random';
@@ -40,7 +40,7 @@ const TodoList = () => {
   };
 
   return (
-    <div className="Todo-main">
+    <section className="Todo-main">
       <Header heading="To Do App" />
       <AddInput addTodo={addTodoItem} />
       <ul className="Todo-list">
@@ -54,7 +54,7 @@ const TodoList = () => {
           />
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 
